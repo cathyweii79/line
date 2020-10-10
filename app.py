@@ -38,7 +38,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.tex
-    s = '我聽不懂你在說什麼?'
+    r = '我聽不懂你在說什麼?'
 
     if msg in ['hi', 'Hi', '嗨']:
         r = 'hi 你好唷唷唷~~~  我是 cathy 機器人  你可以問我cathy今天過得好不好 , 或是David今天在幹嘛而已!'
@@ -51,7 +51,7 @@ def handle_message(event):
 
         line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=s))
+        TextSendMessage(text=r))
 
 
 #     if '想看' in msg:
