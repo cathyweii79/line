@@ -49,7 +49,7 @@ def handle_message(event):
     elif msg in ['David今天在']:
         r = '他一直在睡覺! 想看他怎樣睡覺的話 可以打  想看'
 
-        line_bot_api.reply_message(
+    line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=r))
 
